@@ -1,0 +1,2 @@
+@echo off
+cmd /k java -jar target/Task360TMaha-1.0-SNAPSHOT.jar

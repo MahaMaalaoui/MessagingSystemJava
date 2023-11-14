@@ -1,0 +1,3 @@
+@echo off
+cmd /k java -jar target/ServerPlayer-1.0-SNAPSHOT.jar
+cmd /k java -jar target/ClientPlayer-1.0-SNAPSHOT.jar

@@ -1,0 +1,52 @@
+
+
+* In this code, we have three classes: Player, ServerPlayer, and ClientPlayer. These classes simulate a
+simple communication scenario between two players, where one player:ClientPlayer (initiator) sends a
+message to the other player:ServerPlayer, who responds with the received message and a message counter.
+The communication will end when both players send 10 messages which means that the initiator have send
+and received 10 messages.
+Below is the documentation for each of these classes.
+
+
+* Overall Communication Flow
+    1. The server player (ServerPlayer) listens for incoming connections on port 8080 and accepts
+       the connection from the client player.
+    2. The client player (ClientPlayer) connects to the server player on localhost at port 8080.
+    3. The initiator player (client) sends a message to the other player (server).
+    4. The other player (server) receives the message, responds with the received message and the
+       message counter, and increments the counter.
+  Steps 3 and 4 are repeated in a loop until the message counter reaches a certain limit (10 in this case).
+  The program gracefully closes the connections.
+
+*********************************
+
+I.  Player class
+
+ * The Player class represents a player in a two-player chat application.
+ * Responsibilities:
+
+      * Sending and receiving messages
+      * Keeping track of the number of messages it has sent and received
+
+II. ServerPlayer class
+
+ * The ServerPlayer class represents the server-side player that listens for incoming connections
+   and handles the communication with the other player.
+ * Responsibilities:
+
+        * Accepting connections from client-side players
+        * Handling incoming messages from client-side players
+        * Sending outgoing messages to client-side players
+
+III. ClientPlayer class
+
+  * The ClientPlayer class represents the client-side player that initiates the communication with
+   the server.
+  * Responsibilities:
+
+       * Connecting to the server-side player
+       * Sending messages to the server-side player
+       * Receiving messages from the server-side player
+
+
+

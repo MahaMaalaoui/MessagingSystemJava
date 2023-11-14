@@ -1,0 +1,49 @@
+
+
+This code will create two player instances, initiator and receiver, and set the other player for each player.
+Then, it will send a message from initiator to receiver.
+
+When the receiver receives a message from initiator, the receiver will reply with a message that contains the received
+message concatenated with the value of its countSendMsg member variable.
+
+The communication will end when both players send 10 messages which means that the initiator have send
+and received 10 messages.
+
+**********************************
+
+I. Player class:
+
+  *Responsibilities:
+
+      Represents a player in a chat application.
+      Keeps track of the number of messages the player has sent.
+      Can send and receive messages to and from other players.
+
+  *Public methods:
+
+    setOtherPlayer(Player otherPlayer): Sets the other player in the chat application.
+    sendMessage(Player otherPlayer, String message): Sends a message to the other player.
+    receiveMessage(String message): Receives a message from the other player and trigger a respond.
+
+  *Private members:
+
+    name: The player's name.
+    countSendMsg: The number of messages the player has sent.
+    otherPlayer: The other player in the chat application.
+
+
+II. Main class:
+
+  *Responsibilities:
+
+    Creates two player instances and sets the other player for each player.
+    Sends a message from the first player to the second player and trigger a chat between the two players.
+
+  *Public methods:
+
+    main(String[] args): The entry point for the application.
+
+
+
+
+
